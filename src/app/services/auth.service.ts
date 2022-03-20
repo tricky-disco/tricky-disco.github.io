@@ -22,17 +22,16 @@ export class AuthService {
 
 
 /*
-        String GET_URL = "https://graph.instagram.com/{11.0}/{bo_ris_sve_son}" +
-                        "?fields={fields}" +
-                "&access_token={access-token}";
+  String GET_URL = "https://graph.instagram.com/{11.0}/{bo_ris_sve_son}" +
+                  "?fields={fields}" +
+          "&access_token={access-token}";
 */
 
   testL(): Observable<any> {
-    return this.http.get<any>(`${this.apiurl2}`);
+    return this.http.get<any>(`${this.apiurl1}`);
   }
 
   testL2(): Observable<any> {
     return this.http.get<any>(`${this.apiurl2}`);
   }
-  
 }
