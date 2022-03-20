@@ -29,6 +29,20 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  login3(): void {
+    console.log("login");
+    this.authservice.testL().subscribe(any => {
+      console.log("any: " + any);
+    });
+  }
+
+  login4(): void {
+    console.log("login");
+    this.authservice.testL2().subscribe(any => {
+      console.log("any: " + any);
+    });
+  }
+
   redirect(): void {
     this.router.navigate(["success"]);
   }
