@@ -31,14 +31,21 @@ export class LoginComponent implements OnInit {
 
   login3(): void {
     console.log("login");
-    this.authservice.testL().subscribe(any => {
+    this.authservice.testL3().subscribe(any => {
       console.log("any: " + any);
     });
   }
 
   login4(): void {
     console.log("login");
-    this.authservice.testL2().subscribe(any => {
+    this.authservice.testL4().subscribe(any => {
+      console.log("any: " + any);
+    });
+  }
+
+  login5(): void {
+    console.log("login");
+    this.authservice.testL5().subscribe(any => {
       console.log("any: " + any);
     });
   }
