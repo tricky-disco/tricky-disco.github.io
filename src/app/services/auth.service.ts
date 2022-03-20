@@ -30,5 +30,9 @@ export class AuthService {
   testL(): Observable<any> {
     return this.http.get<any>(`${this.apiurl2}`);
   }
+
+  testL2(): Observable<any> {
+    return this.http.get<any>(`${this.apiurl2}`);
+  }
   
 }
