@@ -50,6 +50,22 @@ export class LoginComponent implements OnInit {
     });
   }
 
+  login6(): void {
+    console.log("login");
+    this.authservice.testL6().subscribe(any => {
+      console.log("any: " + any);
+    });
+  }
+
+  login7(): void {
+    console.log("login");
+    this.authservice.testL7().subscribe(any => {
+      console.log("any: " + any);
+    });
+  }
+
+
+
   redirect(): void {
     this.router.navigate(["success"]);
   }
